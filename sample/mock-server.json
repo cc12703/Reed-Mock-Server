@@ -26,6 +26,17 @@
       }
     ]
   },
+  "servePath": {
+    "enabled": true,
+    "endpoints": [
+      {
+        "endpoint": "/apipath/:name/:repo",
+        "type": "get",
+        "filePath": "./sample/templates/json-path.hbs",
+        "options": {}
+      }
+    ]
+  },
   "serveWebsocket": {
     "enabled": true,
     "endpoints": [
