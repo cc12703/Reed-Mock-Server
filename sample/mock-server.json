@@ -50,6 +50,12 @@
         "endpoint": "/ws2",
         "filePath": "./sample/templates/json-ws2.hbs",
         "type": "fileWatcher"
+      },
+      {
+        "endpoint": "/ws3",
+        "event": "notify",
+        "filePath": "./sample/templates/json-ws2.hbs",
+        "type": "fileWatcher"
       }
     ],
     "options": {}
