@@ -7,7 +7,13 @@
 	        "repo": "{{arg_repo}}",
             "company": "{{company}}",
             "email": "{{email}}",
-            "cellphone": "{{phone "+86 xxx xxxx xxxx"}}"
+            "cellphone": "{{phone "+86 xxx xxxx xxxx"}}",
+            "owner": {{> owner}},
+            "authors": [
+                {{#repeat 3}}
+                {{> author}}
+                {{/repeat}}
+            ]
         }
         {{/repeat}}
     ]

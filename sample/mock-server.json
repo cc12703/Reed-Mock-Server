@@ -33,6 +33,9 @@
         "endpoint": "/apipath/:name/:repo",
         "type": "get",
         "filePath": "./sample/templates/json-path.hbs",
+        "partial": {
+          "filePath": "./sample/templates/json-path-partial.json"
+        },
         "options": {}
       }
     ]

@@ -1,0 +1,11 @@
+
+{
+	"owner": {
+		"firstName": "{{firstName}}",
+    	"lastName": "{{lastName}}"
+	},
+	"author": {
+		"firstName": "{{firstName}}",
+    	"lastName": "{{lastName}}"
+	}
+}
