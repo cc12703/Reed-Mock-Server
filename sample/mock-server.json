@@ -34,7 +34,8 @@
         "type": "get",
         "filePath": "./sample/templates/json-path.hbs",
         "partial": {
-          "filePath": "./sample/templates/json-path-partial.json"
+          "owner": "./sample/templates/json-path-owner.hbs",
+          "author": "./sample/templates/json-path-author.hbs"
         },
         "options": {}
       }
