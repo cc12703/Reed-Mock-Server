@@ -9,7 +9,7 @@
   "scripts": {
     "test": "cross-env MockConfig=./sample/mock-server.json mocha",
     "eslint": "eslint . --fix",
-    "dev": "cross-env MockConfig=./sample/mock-server.json nodemon index.js",
+    "dev": "cross-env MockConfig=./sample/mock-server.json DEBUG=SocketIO nodemon index.js",
     "debug:cli": "node ./cli/index.js start"
   },
   "keywords": [
@@ -29,6 +29,7 @@
     "ws": "^7.1.2"
   },
   "dependencies": {
+    "@cc12703m/reed-json-api": "^1.0.3",
     "@koa/cors": "^2.2.3",
     "commander": "^2.20.0",
     "cross-env": "^7.0.2",
@@ -36,8 +37,8 @@
     "koa": "^2.7.0",
     "koa-body": "^4.1.0",
     "koa-router": "^7.4.0",
-    "@cc12703m/reed-json-api": "^1.0.3",
     "reed-koa-static": "^1.0.0",
-    "reed-koa-websocket": "^1.0.0"
+    "reed-koa-websocket": "^1.0.0",
+    "socket.io": "^4.1.2"
   }
 }

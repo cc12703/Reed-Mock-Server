@@ -73,6 +73,21 @@ imock start -h
       }
     ]
   },
+   "servePath": {
+    "enabled": true,
+    "endpoints": [
+      {
+        "endpoint": "/apipath/:name/:repo",
+        "type": "get",
+        "filePath": "./sample/templates/json-path.hbs",
+        "partial": {
+          "owner": "./sample/templates/json-path-owner.hbs",
+          "author": "./sample/templates/json-path-author.hbs"
+        },
+        "options": {}
+      }
+    ]
+  },
   "serveWebsocket": {
     "enabled": true,
     "endpoints": [
@@ -81,6 +96,19 @@ imock start -h
         "filePath": "./json-ws.hbs",
         "type": "timer",
         "interval": "500"
+      }
+    ],
+    "options": {}
+  },
+  "serveSocketIO": {
+    "enabled": true,
+    "endpoint": "/sio",
+    "namespaces": [
+      { 
+        "namespace": "/nsp",
+        "event": "notify",
+        "filePath": "./sample/templates/json-ws.hbs",
+        "type": "fileWatcher"
       }
     ],
     "options": {}
@@ -110,6 +138,13 @@ imock start -h
 1. API proxy is powered by [http-proxy](https://github.com/nodejitsu/node-http-proxy), more options could be found [here](https://github.com/nodejitsu/node-http-proxy#options).
 
 2. Json data generation is powered by [dummy-json](https://github.com/webroo/dummy-json), available helpers could be found [here](https://github.com/webroo/dummy-json#available-helpers)
+
+
+## How to Debug
+* `serveStatic`, `serveApi`, `servePath` can use curl
+* `serveWebsocket` can use wscat
+* `serveSocketIO` can use debugSIO.html
+
 
 ## TODO
 

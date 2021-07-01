@@ -64,6 +64,25 @@
     ],
     "options": {}
   },
+  "serveSocketIO": {
+    "enabled": true,
+    "endpoint": "/sio",
+    "namespaces": [
+      {
+        "namespace": "/n1",
+        "filePath": "./sample/templates/json-ws1.hbs",
+        "type": "timer",
+        "interval": "500"
+      },
+      {
+        "namespace": "/n2",
+        "event": "notify",
+        "filePath": "./sample/templates/json-ws2.hbs",
+        "type": "fileWatcher"
+      }
+    ],
+    "options": {}
+  },
   "serveProxy": {
     "enabled": true,
     "endpoints": [
