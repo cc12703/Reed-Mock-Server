@@ -38,6 +38,16 @@
           "author": "./sample/templates/json-path-author.hbs"
         },
         "options": {}
+      },
+      {
+        "endpoint": "/apipath/:name/:repo",
+        "type": "post",
+        "filePath": "./sample/templates/json-path.hbs",
+        "partial": {
+          "owner": "./sample/templates/json-path-owner.hbs",
+          "author": "./sample/templates/json-path-author.hbs"
+        },
+        "options": {}
       }
     ]
   },

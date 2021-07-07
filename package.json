@@ -9,7 +9,7 @@
   "scripts": {
     "test": "cross-env MockConfig=./sample/mock-server.json mocha",
     "eslint": "eslint . --fix",
-    "dev": "cross-env MockConfig=./sample/mock-server.json DEBUG=SocketIO nodemon index.js",
+    "dev": "cross-env MockConfig=./sample/mock-server.json DEBUG=* nodemon index.js",
     "debug:cli": "node ./cli/index.js start"
   },
   "keywords": [
