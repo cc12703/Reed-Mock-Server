@@ -85,6 +85,12 @@ imock start -h
           "author": "./sample/templates/json-path-author.hbs"
         },
         "options": {}
+      },
+      {
+        "endpoint": "/apipath-js/:name",
+        "type": "get",
+        "filePath": "./sample/templates/code-path.js",
+        "options": {}
       }
     ]
   },
