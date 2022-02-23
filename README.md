@@ -152,6 +152,9 @@ imock start -h
 * `serveSocketIO` can use debugSIO.html
 
 
+## Publish
+* run `npm pack && npm publish --access public`
+
 ## TODO
 
 1. Add Cache control for static file serve
