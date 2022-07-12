@@ -54,6 +54,12 @@
         "type": "get",
         "filePath": "./sample/templates/code-path.js",
         "options": {}
+      },
+      {
+        "endpoint": "/apipath-js/input",
+        "type": "post",
+        "filePath": "./sample/templates/code-path-post.js",
+        "options": {}
       }
     ]
   },

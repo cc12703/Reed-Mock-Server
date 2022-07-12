@@ -1,14 +1,9 @@
 
-
-
-
-
 var build = function(params, query, body, options) {
 
+	console.log(body)
 
-	data = {
-		test: "test"
-	}	
+	data = {}
 
 	return Object.assign(data, params, query)
 }
