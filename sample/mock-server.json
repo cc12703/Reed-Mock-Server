@@ -82,6 +82,12 @@
         "event": "notify",
         "filePath": "./sample/templates/json-ws2.hbs",
         "type": "fileWatcher"
+      },
+      {
+        "endpoint": "/wsjs",
+        "filePath": "./sample/templates/code-ws.js",
+        "type": "timer",
+        "interval": "500"
       }
     ],
     "options": {}
