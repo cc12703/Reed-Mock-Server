@@ -6,11 +6,14 @@
 var build = function(params, query, body, options) {
 
 
-	data = {
+	body = {
 		test: "test"
 	}	
 
-	return Object.assign(data, params, query)
+	return {
+		__status__: 400,
+		__body__: body
+	}
 }
 
 
